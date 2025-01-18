@@ -5,7 +5,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
 }
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -15,7 +20,62 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.message, .welcome-message {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 12px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sign-in-btn {
+  background-color: #4285f4;
+  color: white;
+}
+
+.sign-in-btn:hover {
+  background-color: #357ae8;
+}
+
+.sign-out-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.sign-out-btn:hover {
+  background-color: #e04343;
 }
