@@ -1,6 +1,6 @@
 // app/layout.tsx
 import ClientLayout from './client-layout';
-
+import "./globals.css"
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
